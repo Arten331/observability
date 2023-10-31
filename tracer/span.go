@@ -7,10 +7,8 @@ import (
 	"go.opentelemetry.io/otel/trace"
 )
 
-var (
-	tracer      trace.Tracer
-	serviceName string
-)
+var tracer trace.Tracer
+var serviceName string
 
 func SetupGlobalTracer(t trace.Tracer, sn string) {
 	serviceName = sn
